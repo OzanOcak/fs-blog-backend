@@ -12,3 +12,9 @@ node src/server.js
 ```console
 curl -X POST -H "Content-Type: application/json" http://localhost:8000/hey -d '{"name":"ozan"}'
 ```
+
+## upvote
+
+```console
+curl -X PUT http://localhost:8000/api/articles/learn-react/upvote
+```
