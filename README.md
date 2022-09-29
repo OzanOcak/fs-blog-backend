@@ -18,3 +18,9 @@ curl -X POST -H "Content-Type: application/json" http://localhost:8000/hey -d '{
 ```console
 curl -X PUT http://localhost:8000/api/articles/learn-react/upvote
 ```
+
+## comment
+
+```console
+curl -X POST -H "Content-Type: application/json" http://localhost:8000/api/articles/mongodb/comments -d '{"postedBy":"shakespeare","text":"be or not to be"}'
+```
