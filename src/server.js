@@ -1,7 +1,11 @@
 import express from "express";
+import cors from "cors";
+import { corsOptions } from "./config/corsOptions.js";
 import { db, connectToDb } from "./db.js";
 
 const app = express();
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
